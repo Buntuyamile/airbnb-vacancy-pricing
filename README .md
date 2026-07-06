@@ -82,6 +82,12 @@ Final predictions (`P̂(fully_booked_30 = 'no')` from the Neural Network) were u
 - **Instability is visible, not just theoretical.** The linear SVM's jagged tuning curve across `C` was a concrete, visual example of the bias-variance tradeoff in action.
 - **Model choice should follow the business decision, not the leaderboard.** Picking a "winner" meant identifying which metric actually reflected what the business needed (reliable ranking + calibrated probabilities), not just picking the highest number in the table.
 
+Data Source
+
+This project uses Cape Town Airbnb listing data derived from Inside Airbnb, a mission-driven project providing data and advocacy about Airbnb's impact on residential communities. Inside Airbnb's data is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Features were engineered from the raw listing data to build the target variable and predictors used here (e.g. fully_booked_30, host_experience, num_verifications). The hypothetical VacancyShield scenario and pricing framing are original to this project and not affiliated with Inside Airbnb or Airbnb itself.
+
 ## Tech Stack
 
 - R (`caret`, `kernlab`/`e1071` for SVMs, `nnet` for the feed-forward network)
